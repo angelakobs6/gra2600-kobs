@@ -41,7 +41,13 @@ a:hover { color: #1d726b; }
 .hero-text {color: #1d726b;}
 /* --- Text blocks --- */
 
-
+.image-inline {
+  float: left;
+  width: 40%;
+  max-width: 80%;
+  margin-right: 1em;
+}
+ P{display: flow-root;}
 /* --- Lists --- */
 
 

@@ -8,6 +8,16 @@
    Mood: dark, fun, healthy white space, geometric, sci-fi
    ============================================ */
 /* --- Base and typography --- */
+
+/* DEBUG: see the boxes. Change 1px to 0 to hide them. */
+* {
+  outline: 0px solid magenta;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
   body {
   font-family: "Open Sans", sans-serif;
   font-size: 103%;
@@ -25,15 +35,24 @@ h4   { font-size: 1rem; }
 
 a { color: #1d726b; }
 a:hover { color: #1d726b; }
+
 /* --- Wrapper --- */
+
   .wrapper {
   max-width: 500px;
   margin: 1rem auto;
+  padding: 40px;
 }
 
 /* --- Header and nav --- */
-.nav-link {font-size: 1.25rem; color: #1d726b; text-decoration: none;}
+
+.nav-link {font-size: 1.25rem; color: #000000; text-decoration: none;}
 .nav-link:hover {color: #1d726b;}
+
+.site-header {
+  background-color: #c5d2df;
+  padding: 16px 0;
+}
 
 /* --- Hero --- */
 
@@ -62,10 +81,23 @@ a:hover { color: #1d726b; }
   bottom: 70%;
   left: 5%;
 }
+.hero-title,
+.hero-text {
+  background-color: rgba(178, 214, 210, 0.7);
+  padding: 2px 8px;
+}
 
 .hero-title {color: #f4f8f8;}
 .hero-text {color: #f4f8f8;}
 /* --- Text blocks --- */
+
+.section-title {
+  margin: 10px 2px 10px;   /* top, left and right, bottom */
+}
+
+.text-block {
+  margin-bottom: 40px;
+}
 
 .image-inline {
   float: left;
@@ -75,10 +107,49 @@ a:hover { color: #1d726b; }
   border-radius: 8px;
 }
  P{display: flow-root;}
+
+.image-inline {
+  float: left;
+  width: 40%;
+  max-width: 100%;
+  margin: 0 1em .5em 0;   /* top, right, bottom, left */
+  border-radius: 6px;
+}
+
 /* --- Lists --- */
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
 
 
 /* --- Links --- */
 
+.nav-link {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px; border-radius: 999px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #f9f9f7;
+}
+
 
 /* --- Footer --- */
+.site-footer {
+  font-weight: bold;
+  font-size: .75rem;
+  background-color: #c5d2df;
+  padding: 2px 0;
+  text-align: left;
+  text-decoration: underline; color: #1d726b; text-decoration-color: #1d726b;
+}

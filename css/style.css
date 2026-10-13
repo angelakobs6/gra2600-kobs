@@ -45,30 +45,32 @@ a:hover { color: #1d726b; }
 }
 
 /* --- Header and nav --- */
+.site-header p {
+  color: #1d726b;
+  font-size: 3rem;
+  padding: 8px 16px 8px 16px;
+  margin: 0;
+}
 
-.site-header {
-
+.site-header {  
   background-color: #c5d2df;
   padding: 20px 0;
   text-align: center;
   font-weight: bold;
 }
 
-.nav-link {font-size: 1rem; 
-  font-weight:regular; 
-  color: #000000; 
-  text-decoration: none;}
-.nav-link:hover {color: #1d726b;}
-
-
-
-
-.site-header .h2{
-
-  background-color: #c5d2df;
-  padding: 16px 0;
-  text-align: center;
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
 }
+
+.nav-link:hover {
+  color: #1d726b;
+}
+
+
 
 /* --- Hero --- */
 
@@ -151,7 +153,8 @@ a:hover { color: #1d726b; }
 .nav-link {
   display: inline-block;
   padding: 2px 8px;
-  border-radius: 6px; border-radius: 999px;
+  border-radius: 6px;
+  border-radius: 999px;
   text-decoration: none;
 }
 

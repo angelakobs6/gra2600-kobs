@@ -11,7 +11,7 @@
 
 /* DEBUG: see the boxes. Change 1px to 0 to hide them. */
 * {
-  outline: 0px solid rgb(92, 163, 233);
+  outline: 1px solid rgb(214, 22, 179);
 }
 
 *, *::before, *::after {
@@ -45,11 +45,15 @@ a:hover { color: #1d726b; }
 }
 
 /* --- Header and nav --- */
-.site-header p {
+.logo {
   color: #1d726b;
-  font-size: 3rem;
-  padding: 8px 16px 8px 16px;
+  font-size: 1rem;
+  padding: 8px 0px 8px 16px;
   margin: 0;
+  text-decoration: none; 
+}
+.logo img {
+  height: 45px;
 }
 
 .site-header {  
@@ -57,7 +61,15 @@ a:hover { color: #1d726b; }
   padding: 20px 0;
   text-align: center;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .5em;
 }
+
 
 .nav-link {
   font-size: 1rem;
@@ -140,13 +152,18 @@ a:hover { color: #1d726b; }
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-.nav-list li {
-  display: inline-block;
-}
-
-
 
 /* --- Links --- */
 

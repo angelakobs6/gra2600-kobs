@@ -40,7 +40,7 @@ a:hover { color: #1d726b; }
 
 .wrapper {
   width: 100%;
-  max-width: 460px;
+  max-width: 1000px;
   padding: 40px;
 }
 
@@ -344,6 +344,8 @@ button:hover {
   .site-header {
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Show hamburger */
